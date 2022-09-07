@@ -12,19 +12,25 @@
   <div style="background-color:blueviolet; padding-top: 1%; padding-bottom: 1%;">
     <navbar id="nav">El(roi)</navbar>
   </div>
-  <div class="hero-image">
-      <img
-        src="images/apt-front-door.jpg"
-        alt="apartment-front-door" 
-        style="width: 100%; height: 500px; object-fit: none;"
-        >
+  <div id="landing" class="hero-image">
+    <img
+      src="images/apt-front-door.jpg"
+      alt="apartment-front-door" 
+      style="width: 100%; height: 500px; object-fit: none;"
+      >
     <div class="centered hero-text">
       <h1>El(roi)</h1>
       <p style="font-size: 50px;">Accurate ROI Estimation</p>
       <div >
-        <button>Get Started</button>
+        <button onclick='remove("landing", "addressForm")'>Get Started</button>
       </div>
     </div>
   </div>
-  </body>
+  <div id = "addressForm" hidden>
+    <form action="" class="card">
+      <label for="address"><b>Address</b></label>
+      <input type="text" name="address" placeholder="123 Main Street">
+    </form>
+  </div>
+</body>
 </html>
