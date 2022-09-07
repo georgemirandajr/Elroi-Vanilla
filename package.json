@@ -1,3 +1,14 @@
-"scripts": {
-    "dev": "lite-server"
-  },
+{
+	"name": "Elroi",
+	"version": "0.0.1",
+	"description": "Return on investment calculations for real estate investments.",
+	"author": {
+		"name": "Jorge Miranda Jr.",
+		"url": "https://github.com/georgemirandajr"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "github",
+		"url": "https://github.com/georgemirandajr/Elroi-Vanilla"
+	}
+}
