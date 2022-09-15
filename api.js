@@ -1,9 +1,11 @@
 API_URL = "https://api.collectapi.com/gasPrice/fromCity?city=boston"
 
 async function getCityGasPrice () {
-    const fetchedKey = await fetch( 'https://harmonious-cuchufli-93ffeb.netlify.app/.netlify/functions/my-first-function' );
-    const keyString = await fetchedKey.json();
     
+    const fetchedKey = await fetch('https://harmonious-cuchufli-93ffeb.netlify.app/.netlify/functions/my-first-function');
+    const keyString = await fetchedKey.json();
+    console.log(keyString);
+
     const response = await fetch( API_URL, { 
         headers: {
             'Content-type': 'application/json',
