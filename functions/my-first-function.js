@@ -1,8 +1,8 @@
 exports.handler = async () => ({
     statusCode: 200,
     body: {
-        API_URL:"https://api.collectapi.com/gasPrice/fromCity?city=boston",
-        API_KEY:"6JBsufP4GegihSRoEDsEsB:7i0kqhMWLNYcfmfMJReaaS"
+        'API_URL':'https://api.collectapi.com/gasPrice/fromCity?city=boston',
+        'API_KEY':'6JBsufP4GegihSRoEDsEsB:7i0kqhMWLNYcfmfMJReaaS'
     },
   } );
 
