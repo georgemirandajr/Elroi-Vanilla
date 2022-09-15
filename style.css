@@ -8,6 +8,21 @@
     margin-top: 20px;
 }
 
+.navHome {
+    text-decoration: none;
+}
+.navHome:link {
+    color: rgb(255, 255, 255);
+}
+
+.navHome:visited{
+    color: rgb(255, 255, 255);
+}
+
+.navHome:hover{
+    color: rgb(255, 255, 255);
+}
+
 h1, h2, h3, h4, h5, h6, p {
     font-family: sans-serif;
 }
@@ -79,6 +94,14 @@ body {
     padding: 16px;
     background-color: white;
 }
+
+.inputGroup {
+    border: #555;
+    border-width: 1em;
+    background-color:burlywood;
+    padding: inherit;
+    padding-right: 15%;
+}
   
 /* Full-width input fields */
 input[type=text] {
@@ -90,6 +113,19 @@ input[type=text] {
 }
   
 input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input:focus {
     background-color: #ddd;
     outline: none;
 }

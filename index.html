@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-	<script src="index.js"></script>
+	<!-- <script src="index.js"></script> -->
   <div style="background-color:blueviolet; padding-top: 1%; padding-bottom: 1%;">
-    <navbar id="nav">El(roi)</navbar>
+    <navbar id="nav"> <a class="navHome" href="/">El(roi)</a></navbar>
   </div>
   <div id="landing" class="hero-image">
     <img
@@ -21,16 +21,15 @@
     <div class="centered hero-text">
       <h1>El(roi)</h1>
       <p style="font-size: 50px;">Accurate ROI Estimation</p>
-      <div >
-        <button onclick='remove("landing", "addressForm")'>Get Started</button>
+      <div>
+        <a href="addressForm.html">
+          <button>
+            Get Started
+          </button>
+        </a>
       </div>
     </div>
   </div>
-  <div id = "addressForm" hidden>
-    <form action="" class="card">
-      <label for="address"><b>Address</b></label>
-      <input type="text" name="address" placeholder="123 Main Street">
-    </form>
-  </div>
+  <!-- <script src="/api.js"></script> -->
 </body>
 </html>
