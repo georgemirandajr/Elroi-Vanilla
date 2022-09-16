@@ -1,16 +1,12 @@
-API_URL = "https://api.collectapi.com/gasPrice/fromCity?city=boston"
-const { GAS_KEY } = process.env;
+my_url = '/.netlify/functions/my-first-function'
 
-async function getCityGasPrice() {
-    const response = await fetch(API_URL, {
-        headers: {
-            'Content-type': 'application/json',
-            'Authorization': `apikey ${GAS_KEY}`
-        }
-    });
-    const json = await response.json();
-    console.log(json);
-};
-
-getCityGasPrice();
-
+fetch( my_url ).then( response => response.json()).then( data=> {
+    // do something with data
+    console.log(data);
+}).catch(error => {
+    //handle the error here
+    return {
+        status: 400,
+        body: 'something went wrong'
+    }
+});
