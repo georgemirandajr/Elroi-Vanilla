@@ -1,5 +1,6 @@
 const { GAS_KEY } = process.env;
 API_URL = "https://api.collectapi.com/gasPrice/fromCity?city=boston";
+import fetch from "node-fetch";
 
 exports.handler = async (event) => {
     
@@ -10,13 +11,13 @@ exports.handler = async (event) => {
         }
     });
 
-    const data = await response.json();
-    console.log(data);
+    // const data = await response.json();
+    // console.log(data);
 
     return {
         statusCode: 200,
         body: JSON.stringify({
-            data: data
+            data: response.data
         }), 
     };
 };

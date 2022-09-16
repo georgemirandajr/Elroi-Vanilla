@@ -10,5 +10,8 @@
 	"repository": {
 		"type": "github",
 		"url": "https://github.com/georgemirandajr/Elroi-Vanilla"
+	},
+	"dependencies": {
+		"node-fetch": "^3.2.10"
 	}
 }
