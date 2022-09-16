@@ -10,13 +10,13 @@ exports.handler = async (event) => {
         }
     });
 
-    const json = await response.json();
-    console.log(json);
+    const data = await response.json();
+    console.log(data);
 
     return {
         statusCode: 200,
         body: JSON.stringify({
-            data: GAS_KEY
+            data: data
         }), 
     };
 };
